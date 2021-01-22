@@ -1,5 +1,6 @@
 import React from 'react';
-import Button from '../button/'
+import Link from 'next/link'
+
 import {HeaderStyle} from './style'
 
 // import { Container } from './styles';
@@ -8,16 +9,13 @@ function Header() {
   return (
       
     <HeaderStyle className="header">
-        <div className="logo">
-            <h1>Logo</h1>
-        </div>
-        
         <nav className="nav-bar">
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Sobre nós</a></li>
-                <li><a href="">Contato</a></li>
-                <li><a href=""><Button title="Agendar Horário"></Button></a></li>
+                <li><Link href="">Home</Link></li>
+                <li><Link href="">Sobre</Link></li>
+                <li><Link href="">Preços</Link></li>
+                <li><Link href="">Contato</Link></li>
+             
             </ul>
         </nav>
         
