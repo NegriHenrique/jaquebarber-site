@@ -1,17 +1,16 @@
 import styled from 'styled-components'
 
 export const HeaderStyle = styled.header `
+    width:100%;
+    position: fixed;
+    z-index:9999;
+    top:0;
+    padding: 2.5rem;
+    text-align:left;
+  
+  
 
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90vw;
-    margin: 1.2rem auto;
-
-
-.logo{
-    color: var(--primary-color)
-}
+   
 
 .nav-bar ul {
     display: flex;
@@ -21,6 +20,16 @@ export const HeaderStyle = styled.header `
 }
 .nav-bar ul li {
     list-style: none;
+    font-size:1.2rem;
+}
+.nav-bar ul li a{
+    color: var(--light-color);
+    transition: color .4s;
+}
+
+.nav-bar ul li a:hover{
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
 }
 
 `
