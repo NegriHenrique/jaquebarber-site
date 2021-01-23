@@ -54,14 +54,18 @@ export const  ContainerStyled = styled.div`
 
 }
 
+
+
 .text-about h2 {
     font-size:2rem;
     margin-bottom: 1.2rem;
+    
 }
 
 .text-about button {
     margin-top: 1.2rem;
 }
+
 
 
 .hour-about{
@@ -71,6 +75,7 @@ export const  ContainerStyled = styled.div`
     padding:2rem;
     font-size: 1.3rem;
     box-shadow: 14px 29px 12px rgba(0, 0, 0, 0.25);
+    margin-top: 10rem;
     
 }
 
@@ -165,7 +170,7 @@ hr{
         flex-direction: row;
     }
     .hour-about{
-        margin-top: -8rem;
+        margin: 0;
         z-index: 9999;
     }
 
