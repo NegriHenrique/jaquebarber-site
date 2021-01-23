@@ -32,12 +32,19 @@ a {
 }
 
 .primary-color{
-  color: var(--primary-color)
+  color: var(--primary-color);
 }
 .light-color{
-  color: var(--light-color)
+  color: var(--light-color);
 }
 
+.dark-color{
+  color: var(--dark-color);
+}
+
+.text-center{
+  text-align:center;
+}
 
 `
 
