@@ -4,8 +4,9 @@ import Link from "next/link";
 import Header from "../components/header";
 import { ContainerStyled } from "../styles/HomeStyles";
 import Button from "../components/button";
+import { motion } from "framer-motion";
 
-import FormatQuoteIcon from '@material-ui/icons/FormatQuote';
+import FormatQuoteIcon from "@material-ui/icons/FormatQuote";
 
 export default function Home(props) {
   return (
@@ -34,7 +35,7 @@ export default function Home(props) {
       </section>
 
       <section className="about-us">
-        <div className="text-about">
+        <motion.div animate={{x: 3}}  className="text-about">
           <p className="primary-color">Sobre Nós</p>
           <hr className="primary-color" />
           <h2 className="dark-color">
@@ -48,8 +49,8 @@ export default function Home(props) {
           <Link href="/">
             <Button title="Leia Mais"></Button>
           </Link>
-        </div>
-        <div className="hour-about">
+        </motion.div>
+        <motion.div animate={{y: -150}} transition={{duration: 2}} className="hour-about">
           <h2>Horários</h2>
           <hr />
           <p>
@@ -61,29 +62,26 @@ export default function Home(props) {
           <p>
             <address>2715 Ash Dr. San Jose, South Dakota 83475</address>
           </p>
-        </div>
+        </motion.div>
       </section>
 
       <section className="quotes">
         <div className="carousel-text">
-        <div className="icon-svg">
-        <FormatQuoteIcon style={{fontSize: 80}} />
-        </div>
-       
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas iste dolore </p>
+          <div className="icon-svg">
+            <FormatQuoteIcon style={{ fontSize: 80 }} />
+          </div>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+            iste dolore{" "}
+          </p>
 
           <small className="name-person">Nome da pessoa</small>
         </div>
         <div className="carousel-div">
-          <Image 
-              src="/carouselimg.jpg"
-              layout='fill'
-            />
-       
-       
+          <Image src="/carouselimg.jpg" layout="fill" />
         </div>
       </section>
-
     </ContainerStyled>
   );
 }
